@@ -10,9 +10,15 @@ export default function Navbar() {
           </svg>
         </a>
         <nav className="md:mx-auto flex flex-wrap items-center text-sm justify-center font-thin">
-          <a className="mx-4 hover:text-gray-900 cursor-pointer">Templates</a>
-          <a className="mx-4 hover:text-gray-900 cursor-pointer">Analytics</a>
-          <a className="mx-4 hover:text-gray-900 cursor-pointer">Pricing</a>
+          <a href="#" className="mx-4 hover:text-gray-900 cursor-pointer">
+            Templates
+          </a>
+          <a href="#" className="mx-4 hover:text-gray-900 cursor-pointer">
+            Analytics
+          </a>
+          <a href="#" className="mx-4 hover:text-gray-900 cursor-pointer">
+            Pricing
+          </a>
         </nav>
 
         <div className="md:inline-flex items-center py-1 px-3 focus:outline-none rounded text-sm font-thin mt-4 md:mt-0 hidden">
