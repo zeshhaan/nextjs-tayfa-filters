@@ -2,15 +2,15 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div className="flex px-4 flex-shrink-0	">
+    <div className="flex flex-shrink-0" className={props.padding}>
       <a
         href=""
-        className="w-full h-full flex flex-col shadow-md overflow-hidden no-underline bg-white rounded-md transition-shadow	"
+        className="w-full h-full flex flex-col shadow-lg overflow-hidden no-underline bg-white rounded-md transition-shadow	"
       >
         <div className="flex relative">
           <div className="block margin-0 box-border">
             <img
-              src="featured-img.png"
+              src={props.img}
               alt=""
               className=" border-none inset-0 object-cover width-0 height-0 min-w-full min-h-full max-w-full max-h-full"
             />
