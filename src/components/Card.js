@@ -18,7 +18,10 @@ function Card(props) {
         </div>
         <div className="px-4 py-6">
           <h3 className="font-bold text-3xl tracking-tighter">{props.name}</h3>
-          <a className="mt-3 text-gray-400 inline-flex items-center font-thin tracking-tighter">
+          <a
+            href=""
+            className="mt-3 text-gray-400 inline-flex items-center font-thin tracking-tighter"
+          >
             <svg
               className="w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"

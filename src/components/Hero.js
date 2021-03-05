@@ -19,9 +19,19 @@ export default function Hero() {
           padding="px-4"
         />
 
-        <Card name="8020" location="SF, USA" img="8020.svg" padding="px-4"/>
-        <Card name="Finsweet" location="Mountain View NY, USA" img="fs.svg" padding="px-4"/>
-        <Card name="Refokus" location="Hamburg, Germany" img="refokus.svg" padding="px-4"/>
+        <Card name="8020" location="SF, USA" img="8020.svg" padding="px-4" />
+        <Card
+          name="Finsweet"
+          location="Mountain View NY, USA"
+          img="fs.svg"
+          padding="px-4"
+        />
+        <Card
+          name="Refokus"
+          location="Hamburg, Germany"
+          img="refokus.svg"
+          padding="px-4"
+        />
       </div>
     </section>
   );

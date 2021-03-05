@@ -1,37 +1,82 @@
 import React from "react";
+import Checkbox from "./Checkbox";
 
 function Filters() {
   return (
     <div>
-      <>
-        {/* search component */}
-        <div className="relative text-gray-600 shadow-sm">
-          <button type="submit" className="absolute right-0 top-0 mt-3 mr-3">
-            <svg
-              className="h-4 w-4 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              id="Capa_1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 56.966 56.966"
-              style={{ enableBackground: "new 0 0 56.966 56.966" }}
-              xmlSpace="preserve"
-              width="512px"
-              height="512px"
-            >
-              <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
-            </svg>
-          </button>
-          <input
-            type="search"
-            name="search"
-            placeholder="Search"
-            className="bg-white h-10 px-5 rounded-md text-sm focus:border-none"
+      {/* search component */}
+      <form class="relative">
+        <svg
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
           />
+        </svg>
+        <input
+          class="focus:border-light-blue-500 focus:ring-1 focus:ring-light-blue-500 focus:outline-none w-full text-sm text-black placeholder-gray-500 border border-gray-200 rounded-md py-2 pl-10"
+          type="text"
+          aria-label="Search..."
+          placeholder="Search..."
+        />
+      </form>
+      {/* filter checkboxes */}
+      <div className="mt-10">
+        {/* filter main heading */}
+        <div className="flex justify-between items-center outline-none border-b	pb-5">
+          <h4 class="text-sm sm:text-base lg:text-sm font-semibold uppercase">
+            FILTER BY:
+          </h4>
+          <button className="text-sm text-gray-400 hover:text-gray-700 transition-colors">
+            Reset
+          </button>
         </div>
-      </>
+
+        {/* filter checkboxes wrapper */}
+        <div className="pb-4">
+          <div className="py-4">
+            <h4 className="text-md text-gray-400 hover:text-gray-700 transition-colors">
+              Capabilities
+            </h4>
+          </div>
+          <div className="ml-2">
+            <Checkbox for="Ecommerce" />
+            <Checkbox for="Design" />
+            <Checkbox for="Branding" />
+          </div>
+        </div>
+
+        <div className="pb-4">
+          <div className="py-4">
+            <h4 className="text-md text-gray-400 hover:text-gray-700 transition-colors">
+              Framework
+            </h4>
+          </div>
+          <div className="ml-2">
+            <Checkbox for="NextJS" />
+            <Checkbox for="Svelte" />
+            <Checkbox for="NuxtJS" />
+          </div>
+        </div>
+
+        <div className="pb-4">
+          <div className="py-4">
+            <h4 className="text-md text-gray-400 hover:text-gray-700 transition-colors">
+              Budgets
+            </h4>
+          </div>
+          <div className="ml-2">
+            <Checkbox for="$1,000 - $4,999" />
+            <Checkbox for="$5,000 - $9,999" />
+            <Checkbox for="$10,000 - $49,999" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
