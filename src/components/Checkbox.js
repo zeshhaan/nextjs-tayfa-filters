@@ -8,7 +8,7 @@ function Checkbox(props) {
           type="checkbox"
           name="checked-demo"
           defaultValue={1}
-          className="form-tick h-4 w-4 border border-gray-300 rounded-sm checked:bg-blue-600 checked:border-transparent focus:outline-none"
+          className="rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
         />
         <span className="text-gray-900 font-sm text-md flex-1">
           {props.for}
